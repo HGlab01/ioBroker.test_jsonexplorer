@@ -1,0 +1,57 @@
+{
+    "common": {
+        "name": "test_jsonexplorer",
+        "version": "0.0.0-0",
+        "news": {
+            "0.0.0-0": {
+            }
+        },
+        "title": "Test JSONExplorer",
+        "titleLang": {
+            "en": "Test JSONExplorer",
+            "de": "Test JSONExplorer"
+        },
+        "desc": {
+            "en": "Test JSONExplorer",
+            "de": "Test JSONExplorer"
+        },
+        "authors": [
+            "HGlab01 <iobroker.fuelpricemonitor@gmail.com>"
+        ],
+        "keywords": [
+            "ioBroker"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "fuelpricemonitor.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/HGlab01/iobroker.test_jsonexplorer/master/admin/test_jsonexplorer.png",
+        "readme": "https://github.com/HGlab01/iobroker.test_jsonexplorer/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "schedule",
+        "schedule": "00 25 30 2 *",
+        "allowInit": true,
+        "type": "vehicle",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=3.2.16"
+            }
+        ],
+        "plugins": {
+        }
+    },
+    "native": {
+        "diesel": true,
+        "super": false,
+        "gas": false,
+        "address": [],
+        "useIDs": false
+    },
+    "objects": [],
+    "instanceObjects": []
+}
