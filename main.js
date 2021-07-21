@@ -45,9 +45,9 @@ class test_jsonexplorer extends utils.Adapter {
         let json = JSON.parse(`
         [{"id":1,"name":"Wohnzimmer","type":"HEATING","dateCreated":"2017-12-25T07:00:36.353Z","deviceTypes":["RU01","VA02"],"devices":[{"deviceType":"RU01","serialNo":"RU1553795072","shortSerialNo":"RU1553795072","currentFwVersion":"54.20","connectionState":{"value":true,"timestamp":"2021-04-16T10:22:27.753Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"batteryState":"NORMAL","duties":["ZONE_UI","CIRCUIT_DRIVER","ZONE_LEADER"]},{"deviceType":"VA02","serialNo":"VA2830045696","shortSerialNo":"VA2830045696","currentFwVersion":"79.1","connectionState":{"value":true,"timestamp":"2021-04-16T10:22:51.168Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-11T22:42:41.050Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":900}},{"id":2,"name":"Badezimmer","type":"HEATING","dateCreated":"2017-12-25T07:16:20.117Z","deviceTypes":["VA01"],"devices":[{"deviceType":"VA01","serialNo":"VA2311784448","shortSerialNo":"VA2311784448","currentFwVersion":"54.20","connectionState":{"value":true,"timestamp":"2021-04-16T10:17:25.096Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-03-14T12:50:06.503Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":1800}},{"id":3,"name":"Kinder hinten","type":"HEATING","dateCreated":"2017-12-25T08:26:53.835Z","deviceTypes":["VA01"],"devices":[{"deviceType":"VA01","serialNo":"VA2227832832","shortSerialNo":"VA2227832832","currentFwVersion":"54.20","connectionState":{"value":true,"timestamp":"2021-04-16T10:14:24.542Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-10T15:42:42.635Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":1800}},{"id":4,"name":"Schlafzimmer","type":"HEATING","dateCreated":"2017-12-25T15:18:04.506Z","deviceTypes":["VA01"],"devices":[{"deviceType":"VA01","serialNo":"VA1194395648","shortSerialNo":"VA1194395648","currentFwVersion":"54.20","connectionState":{"value":true,"timestamp":"2021-04-16T10:23:13.817Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-02T15:58:56.320Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":3600}},{"id":5,"name":"Duschbad","type":"HEATING","dateCreated":"2019-07-26T11:31:09.116Z","deviceTypes":["VA02"],"devices":[{"deviceType":"VA02","serialNo":"VA2813268480","shortSerialNo":"VA2813268480","currentFwVersion":"79.1","connectionState":{"value":true,"timestamp":"2021-04-16T10:20:35.255Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-11T22:36:07.085Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":1800}},{"id":6,"name":"Kinder Mitte","type":"HEATING","dateCreated":"2019-07-26T11:34:29.265Z","deviceTypes":["VA02"],"devices":[{"deviceType":"VA02","serialNo":"VA1236210176","shortSerialNo":"VA1236210176","currentFwVersion":"79.1","connectionState":{"value":true,"timestamp":"2021-04-16T10:20:13.162Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-22T15:56:50.292Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":1800}},{"id":7,"name":"Anbau","type":"HEATING","dateCreated":"2019-07-26T11:50:27.714Z","deviceTypes":["VA02"],"devices":[{"deviceType":"VA02","serialNo":"VA3031372288","shortSerialNo":"VA3031372288","currentFwVersion":"79.1","connectionState":{"value":true,"timestamp":"2021-04-16T10:23:10.172Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-02-09T08:40:02.814Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":900}},{"id":8,"name":"Waschkeller","type":"HEATING","dateCreated":"2020-02-04T09:48:20.276Z","deviceTypes":["VA02"],"devices":[{"deviceType":"VA02","serialNo":"VA0818288384","shortSerialNo":"VA0818288384","currentFwVersion":"79.1","connectionState":{"value":true,"timestamp":"2021-04-16T10:23:48.721Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"mountingState":{"value":"CALIBRATED","timestamp":"2021-03-05T11:23:15.072Z"},"batteryState":"NORMAL","childLockEnabled":false,"duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":true,"dazzleEnabled":true,"dazzleMode":{"supported":true,"enabled":true},"openWindowDetection":{"supported":true,"enabled":false,"timeoutInSeconds":900}},{"id":0,"name":"Warmwasser","type":"HOT_WATER","dateCreated":"2017-12-25T07:00:37.231Z","deviceTypes":["RU01"],"devices":[{"deviceType":"RU01","serialNo":"RU1553795072","shortSerialNo":"RU1553795072","currentFwVersion":"54.20","connectionState":{"value":true,"timestamp":"2021-04-16T10:22:27.753Z"},"characteristics":{"capabilities":["INSIDE_TEMPERATURE_MEASUREMENT","IDENTIFY"]},"batteryState":"NORMAL","duties":["ZONE_UI","ZONE_DRIVER","ZONE_LEADER"]}],"reportAvailable":false,"supportsDazzle":false,"dazzleEnabled":false,"dazzleMode":{"supported":false},"openWindowDetection":{"supported":false}}]
         `);
-        //await JsonExplorer.TraverseJson(json, 'TestObject', true, true, 0, 0);
-        await JsonExplorer.stateSetCreate('TestStateAA', 'teststateAA', 'Text');
-        await JsonExplorer.stateSetCreate('TestStateAA', 'teststateAA', 'Text');
+        await JsonExplorer.TraverseJson(json, 'TestObject', true, true, 0, 0);
+        //await JsonExplorer.stateSetCreate('TestStateAA', 'teststateAA', 'Text');
+        //await JsonExplorer.stateSetCreate('TestStateAA', 'teststateAA', 'Text');
         //await JsonExplorer.stateSetCreate(`teststate`, `teststate`, new Date());
         //this.log.info(typeof (new Date().getTime()));
 
@@ -65,9 +65,16 @@ class test_jsonexplorer extends utils.Adapter {
             ack: true,
             expire: 0
         });*/
-        
-        let host = 'dns.google';
-        let res = (await ping.promise.probe(host)).alive;
+
+        if (await this.checkInternetConnection()) {
+            this.log.info('connected');
+        }
+        else {
+            this.log.info('disconnected');
+        }
+
+        //let host = 'dns.google';
+        //let res = (await ping.promise.probe(host)).alive;
         //this.log.info('Ping: ' + JSON.stringify(res));
         //this.log.info('Ping: ' + JSON.stringify(res.alive));
 
@@ -87,6 +94,11 @@ class test_jsonexplorer extends utils.Adapter {
             callback();
         }
     }
+
+    async checkInternetConnection(host = 'dns.google') {
+        let res = await ping.promise.probe(host);
+        return (res.alive);
+    };
 
     /*
     /**
