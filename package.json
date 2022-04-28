@@ -26,7 +26,7 @@
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.0",
     "iobroker-jsonexplorer": "0.1.9",
-    "ping": "^0.4.1"
+    "ping": "^0.4.2"
   },
   "deprecated": false,
   "description": "Test JsonExplorer",
