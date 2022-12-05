@@ -25,7 +25,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.7",
-    "iobroker-jsonexplorer": "0.1.9",
+    "iobroker-jsonexplorer": "0.1.10",
     "ping": "^0.4.2"
   },
   "deprecated": false,
