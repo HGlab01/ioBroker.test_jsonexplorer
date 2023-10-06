@@ -43,6 +43,9 @@
             }
         ],
         "plugins": {
+            "sentry": {
+                "dsn": "https://accf1b9ec0ee4e4d8217655642077725@sentry.iobroker.net/118"
+            }
         }
     },
     "native": {
