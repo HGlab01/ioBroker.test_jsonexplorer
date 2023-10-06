@@ -23,7 +23,7 @@
     "Treibstoff"
   ],
   "dependencies": {
-    "@iobroker/adapter-core": "^2.5.0",
+    "@iobroker/adapter-core": "^3.0.3",
     "iobroker-jsonexplorer": "0.1.14-alpha.0"
   },
   "deprecated": false,
