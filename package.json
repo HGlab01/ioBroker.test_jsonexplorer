@@ -30,7 +30,7 @@
   "description": "Test JsonExplorer",
   "devDependencies": {
     "@alcalzone/release-script": "^2.2.0",
-    "@iobroker/testing": "^2.6.0",
+    "@iobroker/testing": "^4.1.0",
     "@types/chai": "^4.3.8",
     "@types/chai-as-promised": "^7.1.2",
     "@types/gulp": "^4.0.14",
