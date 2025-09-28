@@ -30,7 +30,7 @@
         "readme": "https://github.com/HGlab01/iobroker.test_jsonexplorer/blob/master/README.md",
         "loglevel": "info",
         "mode": "schedule",
-        "schedule": "00 25 30 2 *",
+        "schedule": "43 0 23 * * *",
         "allowInit": true,
         "type": "vehicle",
         "compact": true,
