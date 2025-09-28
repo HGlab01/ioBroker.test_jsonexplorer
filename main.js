@@ -16,7 +16,7 @@ const { version } = require('./package.json');
 
 class test_jsonexplorer extends utils.Adapter {
     /**
-     * @param {Partial<utils.AdapterOptions>} [options]
+     * @param {Partial<utils.AdapterOptions>} options - Adapter options object.
      */
     constructor(options) {
         super({
@@ -81,7 +81,7 @@ class test_jsonexplorer extends utils.Adapter {
     /**
      * Is called when adapter shuts down - callback has to be called under any circumstances!
      *
-     * @param {() => void} callback
+     * @param {() => void} callback - Function to be called when cleanup is complete.
      */
     onUnload(callback) {
         try {
@@ -114,10 +114,12 @@ class test_jsonexplorer extends utils.Adapter {
 if (module.parent) {
     // Export the constructor in compact mode
     /**
-     * @param {Partial<utils.AdapterOptions>} [options]
+     * Creates a new instance of the test_jsonexplorer adapter.
+     *
+     * @param {Partial<utils.AdapterOptions>} [options] - Adapter options object.
      */
-    module.exports = options => new test_jsonexplorer(options);
+    module.exports = (options = {}) => new test_jsonexplorer(options);
 } else {
     // otherwise start the instance directly
-    new test_jsonexplorer();
+    new test_jsonexplorer({});
 }
