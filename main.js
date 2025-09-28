@@ -14,11 +14,9 @@ const stateAttr = require(`${__dirname}/lib/stateAttr.js`); // Load attribute li
 const { version } = require('./package.json');
 //global variables
 
-
 class test_jsonexplorer extends utils.Adapter {
-
     /**
-     * @param {Partial<utils.AdapterOptions>} [options={}]
+     * @param {Partial<utils.AdapterOptions>} [options]
      */
     constructor(options) {
         super({
@@ -72,30 +70,28 @@ class test_jsonexplorer extends utils.Adapter {
             expire: 0
         });*/
 
-
-
         //let host = 'dns.google';
         //let res = (await ping.promise.probe(host)).alive;
         //this.log.info('Ping: ' + JSON.stringify(res));
         //this.log.info('Ping: ' + JSON.stringify(res.alive));
-
 
         this.terminate ? this.terminate(0) : process.exit(0);
     }
 
     /**
      * Is called when adapter shuts down - callback has to be called under any circumstances!
+     *
      * @param {() => void} callback
      */
     onUnload(callback) {
         try {
             this.log.info('cleaned everything up...');
             callback();
-        } catch (e) {
+        } catch {
             callback();
         }
     }
-    
+
     /*
     /**
      * Is called if a subscribed state changes
@@ -114,13 +110,13 @@ class test_jsonexplorer extends utils.Adapter {
     }*/
 }
 
-// @ts-ignore parent is a valid property on module
+// @ts-expect-error alles ok
 if (module.parent) {
     // Export the constructor in compact mode
     /**
-     * @param {Partial<utils.AdapterOptions>} [options={}]
+     * @param {Partial<utils.AdapterOptions>} [options]
      */
-    module.exports = (options) => new test_jsonexplorer(options);
+    module.exports = options => new test_jsonexplorer(options);
 } else {
     // otherwise start the instance directly
     new test_jsonexplorer();
